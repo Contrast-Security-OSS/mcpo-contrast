@@ -1,0 +1,27 @@
+{
+    "mcpServers": {
+        "sequential-thinking": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "memory": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@modelcontextprotocol/server-memory"
+            ]
+        },
+        "contrast-mcp": {
+            "command": "/usr/bin/java", 
+            "args": ["-jar","/app/mcp-contrast.jar",
+            "--CONTRAST_HOST_NAME=**your_contrast_server_ex:https://blah.contrastsecurity.com**",
+            "--CONTRAST_API_KEY=**your_api_key**",
+            "--CONTRAST_SERVICE_KEY=**your_service_key**",
+            "--CONTRAST_USERNAME=**your_contrast_username**",
+            "--CONTRAST_ORG_ID=**your_org_id**"]
+        }
+    }
+}

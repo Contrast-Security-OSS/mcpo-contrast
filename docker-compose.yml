@@ -1,0 +1,10 @@
+services:
+  mcpo:
+    build: .
+    container_name: mcpo
+    image: mcpo-docker  # Use our locally built image with Java
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./config.json:/app/config.json
+      - ./mcp-contrast.jar:/app/mcp-contrast.jar
